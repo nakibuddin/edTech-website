@@ -11,7 +11,11 @@
             background-color: #289BDE;
         }
 
-        @media screen and (min-width: 576px) {
+        .my_height{
+            height: 26px;
+        }
+
+        @media screen and (min-width: 768px) {
             .my_inner_class{
                 width: 50%;
             }
@@ -115,7 +119,7 @@
             <p class="text-center text-muted mb-5">content of a page when looking at its layout.</p>
     
             <div class="container">
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 ">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-lg-2">
                     <div class="col p-2">
                         <div class=" d-flex border rounded flex-column flex-sm-row flex-md-row flex-lg-row flex-xl-row">
                             <img src="images/course/course-1.png" alt="">
@@ -199,8 +203,8 @@
         <!----------------------------------- registration section -------------------------------------
                                         ***---------------------------***                         -->
         <section class="mx-4 my-5">
-            <div class="container rounded d-flex flex-column align-items-center text-center flex-sm-row justify-content-sm-around text-sm-start bg_mycolor py-5">                
-                <div class="bg-secondary my_inner_class">
+            <div class="container rounded d-flex flex-column align-items-center text-center flex-md-row justify-content-md-around text-md-start bg_mycolor py-5">                
+                <div class="my_inner_class">
                     <h1 class="text-white fw-bold mb-3">Ready to join?</h1>
                     <p class="text-white">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>                
@@ -231,11 +235,11 @@
         <!----------------------------------- accordion section -------------------------------------
                                         ***---------------------------***                         -->
         <section class="mx-4"> 
-            <h1 class="text-center fw-bold mt-5 mb-4">Frequently Asked Questions</h1>
+            <h1 class="text-center fw-bold mt-4 mb-4">Frequently Asked Questions</h1>
             <p class="text-center text-muted mb-0">It is a long established fact that a reader will be distracted by the readable</p>
-            <p class="text-center text-muted mb-5">content of a page when looking at its layout.</p>
+            <p class="text-center text-muted mb-4">content of a page when looking at its layout.</p>
 
-            <div class="accordion container px-0" id="accordionExample">
+            <div class="accordion container px-0 pb-5" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -288,8 +292,24 @@
                     </div>
                 </div>                
             </div>                                                            
+        </section> <br><br>
+        
+        <!----------------------------------- our partner section -------------------------------------
+                                        ***---------------------------***                         -->
+        <section class="d-none d-lg-block">
+            <h1 class="text-center fw-bold mt-5 mb-5">Trusted by over 800+ companies</h1>
+            <div class="container d-flex justify-content-between my_height">
+                <img src="images/company/company-1.png" alt="">
+                <img src="images/company/company-2.png" alt="">
+                <img src="images/company/company-3.png" alt="">
+                <img src="images/company/company-4.png" alt="">
+                <img src="images/company/company-5.png" alt="">
+                <img src="images/company/company-6.png" alt="">
+            </div>
         </section>
     </main>
+
+    
 
            
 
