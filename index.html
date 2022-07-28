@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdTech Website</title>
+    <script src="https://kit.fontawesome.com/406176a579.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <style>
         .bg_mycolor{
             background-color: #289BDE;
         }
 
+        /*--------------------------------- our partner section image height handling ---------------------*/
         .my_height{
             height: 26px;
         }
 
+        /*--------------------------------- footer section margin padding handling ---------------------*/
+        @media screen and (max-width: 767px) {
+            .my_footer_none{
+                display: none;
+            }
+            .my_footer_hidden{
+                display: block !important;
+                visibility: hidden;
+            }
+        }
+
+        /*--------------------------------- registration section flex item width handling --------------*/
         @media screen and (min-width: 768px) {
             .my_inner_class{
                 width: 50%;
@@ -199,7 +213,6 @@
             </div>
         </section> <br><br>
         
-
         <!----------------------------------- registration section -------------------------------------
                                         ***---------------------------***                         -->
         <section class="mx-4 my-5">
@@ -298,7 +311,7 @@
                                         ***---------------------------***                         -->
         <section class="d-none d-lg-block">
             <h1 class="text-center fw-bold mt-5 mb-5">Trusted by over 800+ companies</h1>
-            <div class="container d-flex justify-content-between my_height">
+            <div class="container d-flex justify-content-between my_height mb-4">
                 <img src="images/company/company-1.png" alt="">
                 <img src="images/company/company-2.png" alt="">
                 <img src="images/company/company-3.png" alt="">
@@ -306,14 +319,33 @@
                 <img src="images/company/company-5.png" alt="">
                 <img src="images/company/company-6.png" alt="">
             </div>
-        </section>
+        </section> <br>
     </main>
 
-    
+    <!----------------------------------- footer section -------------------------------------
+                                ***---------------------------***                         -->
+    <footer>
+        <section class="bg-dark mt-5 text-center">   
+            <h6 class="text-white mb-0 invisible my_footer_none">Hello</h6>
+
+            <h1 class="text-white fw-bold mt-5 pt-5">Pro Edu</h1>            
+            <p class="text-white fw-light mb-0">Office 41, Zawaya Buildin, Ghala Muscat,</p>
+            <p class="text-white fw-light mb-0">Sultanate of Oman</p>
+            <p class="text-white fw-light ">Privacy Ploicy | Terms of use</p>
+
+            <a class="mx-3" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook fs-3"></i></a>
+            <a class="me-3" href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter fs-3"></i></a>
+            <a class="me-3" href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin fs-3"></i></a>
+            <a class="me-3" href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok fs-3"></i></a>
+
+            <h1 class="pb-5 text-white invisible my_footer_none">Hello</h1>
+            <h6 class="text-white d-none pb-4 my_footer_hidden">Hello</h6>
+        </section>        
+    </footer>
 
            
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
